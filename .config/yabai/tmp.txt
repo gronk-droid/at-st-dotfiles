@@ -1,0 +1,8 @@
+# input the line below into the file you are editing.
+#  replace <yabai> with the path to the yabai binary (output of: which yabai).
+#  replace <user> with your username (output of: whoami). 
+#  replace <hash> with the sha256 hash of the yabai binary (output of: shasum -a 256 $(which yabai)).
+#   this hash must be updated manually after upgrading yabai.
+
+gronk-droid ALL=(root) NOPASSWD: sha256:b5cf0d0286073361861852d5d7b4e706bc7a94780da3e1807250a2020f6cdc0d /opt/homebrew/bin/yabai --load-sa
+

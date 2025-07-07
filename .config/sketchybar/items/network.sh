@@ -16,7 +16,7 @@ sketchybar --clone     network.label      label_template                        
            --set       network.up         label.font="$FONT:Heavy:9"                    \
                                           icon.font="$FONT:Heavy:9"                     \
                                           icon=􀅃                                        \
-                                          icon.highlight_color=0xff8b0a0d               \
+                                          icon.highlight_color=0xf28b0a0d               \
                                           width=0                                       \
                                           y_offset=5                                    \
                                           associated_space=3                            \
@@ -28,7 +28,7 @@ sketchybar --clone     network.label      label_template                        
            --set       network.down       label.font="$FONT:Heavy:9"                    \
                                           icon.font="$FONT:Heavy:9"                     \
                                           icon=􀅄                                        \
-                                          icon.highlight_color=0xff10528c               \
+                                          icon.highlight_color=0xf210528c               \
                                           y_offset=-5                                   \
                                           associated_space=3                            \
                                                                                         \

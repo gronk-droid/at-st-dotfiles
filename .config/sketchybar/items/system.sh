@@ -23,12 +23,6 @@ sketchybar  --add       item              battery left                          
                                           label.padding_right=0                         \
             --subscribe battery           system_woke                                   \
             --subscribe battery           space_change                                  \
-            #                                                                             \
-            # --add       item               system.yabai_float right                     \
-            # --set       system.yabai_float script="$PLUGIN_DIR/yabai_float.sh"          \
-            #                                label.drawing=off                            \
-            #                                updates=on                                   \
-            #                                icon.drawing=on                              \
             --subscribe system.yabai_float front_app_switched window_focus mouse.clicked\
                                                                                         \
             --add       bracket            system                                       \

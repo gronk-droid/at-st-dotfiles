@@ -14,21 +14,17 @@ BATT_ICON_SIZE="$FONT:Regular:13.0"
 
 
 
-sketchybar  --add       item              battery left                                 \
+sketchybar  --add       item              battery right                                 \
             --set       battery           update_freq=100                               \
                                           script="$PLUGIN_DIR/$BATT_SCRIPT"             \
                                           icon.font="$BATT_ICON_SIZE"                   \
+                                          icon.y_offset=1.5                             \
+                                          icon.padding_right=-1                         \
                                           label.font="$FONT:Bold Italic:14.0"           \
-                                          background.height=$SEGMENT_HEIGHT             \
-                                          label.padding_right=0                         \
             --subscribe battery           system_woke                                   \
             --subscribe battery           space_change                                  \
-            --subscribe system.yabai_float front_app_switched window_focus mouse.clicked\
                                                                                         \
             --add       bracket            system                                       \
-                                           system.label                                 \
                                            battery                                      \
-                                           system.caffeinate                            \
-                                           system.yabai_float                           \
                                                                                         \
             --set       system             background.drawing=on

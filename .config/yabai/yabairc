@@ -30,11 +30,7 @@ yabai -m config window_opacity                  on
 # yabai -m config normal_window_opacity           0.95
 yabai -m config active_window_opacity           1.00
 yabai -m config normal_window_opacity           1.00
-yabai -m config window_border                   on
-yabai -m config window_border_width             3
-yabai -m config active_window_border_color      0xff514A50
-yabai -m config normal_window_border_color      0xff2d2a2e
-yabai -m config insert_feedback_color           0x00d75f5f
+yabai -m config insert_feedback_color           0xffFDAEAB
 
 # new window treatment
 yabai -m config split_ratio                     0.50
@@ -42,7 +38,7 @@ yabai -m config auto_balance                    on
 
 # mouse options
 yabai -m config mouse_follows_focus             off
-yabai -m config focus_follows_mouse             off
+yabai -m config focus_follows_mouse             autofocus
 yabai -m config mouse_modifier                  alt
 yabai -m config mouse_action1                   move
 yabai -m config mouse_action2                   resize
@@ -53,16 +49,13 @@ yabai -m config layout                          bsp
 yabai -m config external_bar                    all:16:0
 yabai -m config top_padding                     16
 yabai -m config bottom_padding                  16
-yabai -m config left_padding                    16
-yabai -m config right_padding                   16
+yabai -m config left_padding                    18
+yabai -m config right_padding                   18
 yabai -m config window_gap                      16
 
 # $UNMANAGED
 
-yabai -m signal --add event=system_woke action="brew services restart sketchybar"
+# yabai -m signal --add event=system_woke action="brew services restart sketchybar"
 
-# Start SKHD in the background. Work around issues:
-# https://github.com/koekeishiya/skhd/issues/103
-# https://github.com/koekeishiya/skhd/issues/139
-# thanks to @aSapien!!!
-skhd -c $HOME/.config/skhd/skhdrc
+# start janky boarders
+borders active_color=0xff625A60 inactive_color=0xff2d2a2e width=4.0 &

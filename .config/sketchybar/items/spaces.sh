@@ -1,7 +1,8 @@
 #!/bin/bash
 
 sketchybar  --add       space               space_template left                 \
-            --set       space_template      icon.highlight_color=0xff978C8C     \
+            --set       space_template      icon.highlight_color=0xfffdfff1     \
+                                            icon.color=0xff625A60               \
                                             label.drawing=off                   \
                                             icon.font="$FONT:Regular:16.0"      \
                                             drawing=off                         \

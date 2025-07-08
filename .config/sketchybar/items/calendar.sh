@@ -1,24 +1,24 @@
 #!/bin/bash
 
-sketchybar  --clone     calendar.date       label_template                      \
-            --set       calendar.date       update_freq=60                      \
+sketchybar  --clone     date                label_template                      \
+            --set       date                update_freq=60                      \
+                                            label.background.color=0xff2d2a2e   \
                                             position=right                      \
-                                            label=cal                           \
                                             drawing=on                          \
-                                            background.padding_right=10         \
-                                            background.padding_left=10          \
+                                            icon.drawing=off                    \
                                             script="$PLUGIN_DIR/date.sh"        \
-                                                                                \
-            --add       bracket             calendar                            \
-                                            calendar.time                       \
-                                            calendar.date                       \
-                                                                                \
-            --set       calendar            background.drawing=on
+                                            background.drawing=on               \
+                                            padding_right=20                    \
+                                            label.padding_left=10               \
+                                            label.padding_right=10              \
 
 sketchybar  --add       item                time right                          \
             --set       time                update_freq=2                       \
                                             icon.drawing=off                    \
                                             position=right                      \
                                             script="$PLUGIN_DIR/time.sh"        \
-            --set       time                background.drawing=on
+                                            padding_right=20                    \
+                                            background.drawing=on               \
+                                            label.padding_left=10               \
+                                            label.padding_right=10              \
 

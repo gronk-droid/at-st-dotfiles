@@ -46,3 +46,7 @@ set tacklebox_path ~/.tackle ~/.tacklebox
 # Load Tacklebox configuration
 . ~/.tacklebox/tacklebox.fish
 
+set -gx SSH_AUTH_SOCK ~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
+
+# zoxide init
+zoxide init --cmd cd fish | source
